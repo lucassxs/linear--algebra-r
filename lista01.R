@@ -5,6 +5,9 @@
 install.packages("matlib")
 
 
+
+
+## Exercicio 01
 def(crossTable <- xtabs(~varNames, data= dataName, exclude = c(exclude), subset = subset)
 ftable(crossTable)  # print crosstabs
 summary(crossTable) # chi-square tests)
@@ -32,4 +35,10 @@ Det(B, method="cofactors")
 echelon(A, B, reduced = TRUE, ...)
 EC$vectors %*% diag(EC$values) %*% t(EC$vectors)
 
-gaussianElimination()
+gaussianElimination(A, b)
+gaussianElimination(A, b, verbose=TRUE, fractions=TRUE)
+gaussianElimination(A, b, verbose=TRUE, fractions=TRUE, latex=TRUE)
+
+
+#### Exercicio 02
+
